@@ -79,7 +79,7 @@ final class WooCommerce implements Bootable {
 
 	public function delivery_estimate(): void {
 		echo '<p class="pp-delivery">' .
-			esc_html__( 'Order before 2:00 PM for same-day dispatch in Nairobi. Countrywide delivery in 1–3 business days.', 'powerplug' ) .
+			esc_html__( 'Order before 5:00 PM for same-day dispatch in Nairobi. Delivery: Nairobi same or next day, other towns 1–2 days, remote areas 2–5 days.', 'powerplug' ) .
 			'</p>';
 	}
 

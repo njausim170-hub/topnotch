@@ -274,7 +274,7 @@ final class Home {
 	public static function why_choose_us(): void {
 		$points = [
 			[ 'Genuine & warranty-backed', 'We source only from reputable manufacturers and distributors.' ],
-			[ 'Same-day Nairobi dispatch', 'Order before 2:00 PM for same-day dispatch; countrywide in 1–3 days.' ],
+			[ 'Same-day Nairobi dispatch', 'Order before 5:00 PM for same-day dispatch; Nairobi same/next day, other towns 1–2 days, remote 2–5 days.' ],
 			[ 'M-Pesa & pay on delivery', 'Pay the way that suits you — securely.' ],
 			[ 'Expert support', 'Our team knows these tools inside out and helps you choose right.' ],
 		];
@@ -288,7 +288,7 @@ final class Home {
 	public static function faq(): void {
 		$faqs = [
 			[ 'Are your tools genuine?', 'Yes. Every item is sourced from reputable manufacturers and distributors, and is warranty-backed.' ],
-			[ 'Do you deliver countrywide?', 'Yes — Nairobi same/next day, countrywide in 1–3 business days.' ],
+			[ 'Do you deliver countrywide?', 'Yes — Nairobi same or next day, other towns 1–2 business days, remote areas 2–5 business days.' ],
 			[ 'What payment methods do you accept?', 'M-Pesa, bank transfer and pay-on-delivery where available.' ],
 			[ 'Can I return an item?', 'Yes, unused items in original packaging within 7 days. Faulty items are replaced or refunded at our cost.' ],
 		];
@@ -328,7 +328,7 @@ final class Home {
 			__( 'Genuine & warranty-backed products', 'powerplug' ),
 			__( 'Physical shop in Nairobi CBD', 'powerplug' ),
 			__( 'Secure payment: M-Pesa or Pay on delivery', 'powerplug' ),
-			__( 'Nationwide delivery in 1–3 days', 'powerplug' ),
+			__( 'Nationwide delivery in 1–5 days', 'powerplug' ),
 		);
 		echo '<section class="pp-trust-strip" aria-label="' . esc_attr__( 'Why shop with TopNotch Mall', 'powerplug' ) . '"><div class="pp-container pp-trust-strip__grid">';
 		foreach ( $items as $it ) {

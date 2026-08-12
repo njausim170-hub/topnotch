@@ -24,7 +24,7 @@ add_action(
  *
  * Renders under the Add to Cart button and opens WhatsApp with the product
  * name, link and price pre-filled. Uses the WhatsApp number set in
- * Appearance > Customize > PowerPlug Pro > Header & Contact.
+ * Appearance > Customize > TopNotch Mall > Header & Contact.
  */
 add_action(
 	'woocommerce_after_add_to_cart_button',
@@ -52,6 +52,38 @@ add_action(
 		);
 	},
 	20
+);
+
+/**
+ * Lightweight front-end performance.
+ *
+ * Drops core requests most stores never use: the emoji-detection script and
+ * its inline styles, plus wp-embed.js. Fewer bytes and fewer HTTP requests on
+ * every page load, with no visual change. Safe, standard hardening.
+ */
+add_action(
+	'init',
+	static function (): void {
+		if ( is_admin() ) {
+			return;
+		}
+		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+		remove_action( 'wp_print_styles', 'print_emoji_styles' );
+		remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+		remove_action( 'admin_print_styles', 'print_emoji_styles' );
+		remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+		remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+		remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+		add_filter( 'emoji_svg_url', '__return_false' );
+	}
+);
+
+add_action(
+	'wp_footer',
+	static function (): void {
+		wp_dequeue_script( 'wp-embed' );
+	},
+	1
 );
 
 /**

@@ -5,7 +5,7 @@ Template: powerplug
 Author: TopNotch Mall
 Author URI: https://topnotchmall.co.ke/
 Description: Child theme for the TopNotch Mall theme. Put ALL customizations here so parent-theme updates never overwrite your work.
-Version: 1.2.0
+Version: 1.3.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powerplug-child
@@ -48,5 +48,32 @@ Text Domain: powerplug-child
 /* "Order on WhatsApp" product button */
 .tnm-order-whatsapp{display:inline-block;margin-top:10px;background:#1EAE54;color:#fff}
 .tnm-order-whatsapp:hover{background:#178a43;color:#fff}
+
+/* ===================================================================
+   Content pages (About, policies, etc.): full-width, left-aligned.
+   Previously the body text hugged a narrow 840px column on the left,
+   leaving a large empty gap on the right; now it fills the container
+   like the reference site.
+   =================================================================== */
+.pp-page .pp-page__content.pp-richtext{max-width:none;margin-left:0;margin-right:0}
+
+/* ===================================================================
+   Single product page: tidy trust badges, product meta and delivery
+   note — a clean, one-item-per-line arrangement.
+   =================================================================== */
+/* Store guarantees as a clean, boxed checklist */
+.entry-summary .pp-trust{list-style:none;display:grid;gap:10px;margin:18px 0;padding:14px 16px;border:1px solid var(--pp-line,#e6e8ec);border-radius:12px;background:#fff}
+.entry-summary .pp-trust li{position:relative;padding-left:26px;margin:0;color:var(--pp-ink);font-weight:600;font-size:.9rem}
+.entry-summary .pp-trust li::before{content:"✓";position:absolute;left:0;top:0;color:#1EAE54;font-weight:800}
+
+/* SKU / Category / Brand — each on its own line, values emphasised */
+.entry-summary .product_meta{margin-top:16px;padding-top:14px;border-top:1px solid var(--pp-line,#e6e8ec);font-size:.92rem;line-height:1.55}
+.entry-summary .product_meta>span{display:block;margin:0 0 6px;color:var(--pp-text-muted,#5b6472)}
+.entry-summary .product_meta>span:last-child{margin-bottom:0}
+.entry-summary .product_meta .sku,.entry-summary .product_meta a{color:var(--pp-ink);font-weight:600;text-decoration:none}
+.entry-summary .product_meta a:hover{color:var(--pp-brand);text-decoration:underline}
+
+/* Delivery estimate note in the brand-blue tint */
+.pp-delivery{background:var(--pp-brand-050,#E7EEFC);border:1px solid #cfe0fb;border-radius:10px;padding:12px 14px;font-size:.92rem;color:var(--pp-ink);margin-top:14px}
 
 /* Add your custom CSS below. */
