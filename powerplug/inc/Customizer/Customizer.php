@@ -37,7 +37,7 @@ final class Customizer implements Bootable {
 	}
 
 	public function register( \WP_Customize_Manager $wp ): void {
-		$wp->add_panel( 'powerplug', [ 'title' => __( 'PowerPlug Pro', 'powerplug' ), 'priority' => 20 ] );
+		$wp->add_panel( 'powerplug', [ 'title' => __( 'TopNotch Mall', 'powerplug' ), 'priority' => 20 ] );
 		$wp->add_section( 'pp_contact', [ 'title' => __( 'Header & Contact', 'powerplug' ), 'panel' => 'powerplug' ] );
 
 		$fields = [

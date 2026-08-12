@@ -150,7 +150,7 @@ final class Demo_Importer {
 	}
 
 	private function import_menus(): int {
-		$menu_name = 'PowerPlug Primary';
+		$menu_name = 'TopNotch Mall Primary';
 		$menu      = wp_get_nav_menu_object( $menu_name );
 		$menu_id   = $menu ? (int) $menu->term_id : (int) wp_create_nav_menu( $menu_name );
 		if ( is_wp_error( $menu_id ) || ! $menu_id ) {

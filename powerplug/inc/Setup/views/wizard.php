@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <div class="pp-wizard" id="pp-wizard">
 	<header class="pp-wizard__head">
-		<h1>PowerPlug Setup</h1>
+		<h1>TopNotch Mall Setup</h1>
 		<ol class="pp-wizard__steps" aria-label="<?php esc_attr_e( 'Setup steps', 'powerplug' ); ?>">
 			<li data-step="1" class="is-active"><?php esc_html_e( 'Welcome', 'powerplug' ); ?></li>
 			<li data-step="2"><?php esc_html_e( 'Plugins', 'powerplug' ); ?></li>
@@ -19,8 +19,8 @@ defined( 'ABSPATH' ) || exit;
 	</header>
 
 	<section class="pp-wizard__panel" data-panel="1" aria-hidden="false">
-		<h2><?php esc_html_e( 'Welcome to PowerPlug', 'powerplug' ); ?></h2>
-		<p><?php esc_html_e( 'This wizard installs the plugins your store needs, activates them, and imports professional demo content tailored for a power-tools retailer. You can re-run it any time from Appearance → PowerPlug Setup.', 'powerplug' ); ?></p>
+		<h2><?php esc_html_e( 'Welcome to TopNotch Mall', 'powerplug' ); ?></h2>
+		<p><?php esc_html_e( 'This wizard installs the plugins your store needs, activates them, and imports professional demo content tailored for your store. You can re-run it any time from Appearance → TopNotch Mall Setup.', 'powerplug' ); ?></p>
 		<button class="button button-primary pp-next"><?php esc_html_e( 'Let’s go', 'powerplug' ); ?></button>
 	</section>
 

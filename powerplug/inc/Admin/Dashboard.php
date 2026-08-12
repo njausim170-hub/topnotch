@@ -20,8 +20,8 @@ final class Dashboard implements Bootable {
 
 	public function menu(): void {
 		add_menu_page(
-			__( 'PowerPlug', 'powerplug' ),
-			__( 'PowerPlug', 'powerplug' ),
+			__( 'TopNotch Mall', 'powerplug' ),
+			__( 'TopNotch Mall', 'powerplug' ),
 			'manage_options',
 			'powerplug-dashboard',
 			[ $this, 'render' ],
@@ -41,7 +41,7 @@ final class Dashboard implements Bootable {
 			'security' => 0,
 		] );
 
-		echo '<div class="wrap"><h1>' . esc_html__( 'PowerPlug Control Center', 'powerplug' ) . '</h1>';
+		echo '<div class="wrap"><h1>' . esc_html__( 'TopNotch Mall Control Center', 'powerplug' ) . '</h1>';
 		echo '<div class="pp-cards" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:20px">';
 		foreach ( $scores as $label => $value ) {
 			printf(

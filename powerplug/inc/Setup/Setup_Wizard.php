@@ -54,7 +54,7 @@ final class Setup_Wizard implements Bootable {
 			return;
 		}
 		$url = admin_url( 'themes.php?page=powerplug-setup' );
-		echo '<div class="notice notice-info is-dismissible"><p><strong>PowerPlug</strong> &mdash; ' .
+		echo '<div class="notice notice-info is-dismissible"><p><strong>TopNotch Mall</strong> &mdash; ' .
 			esc_html__( 'Finish setup: install the required plugins and import demo content.', 'powerplug' ) .
 			' <a class="button button-primary" href="' . esc_url( $url ) . '">' .
 			esc_html__( 'Launch Setup Wizard', 'powerplug' ) . '</a></p></div>';
@@ -63,8 +63,8 @@ final class Setup_Wizard implements Bootable {
 	public function register_page(): void {
 		add_submenu_page(
 			'themes.php',
-			__( 'PowerPlug Setup', 'powerplug' ),
-			__( 'PowerPlug Setup', 'powerplug' ),
+			__( 'TopNotch Mall Setup', 'powerplug' ),
+			__( 'TopNotch Mall Setup', 'powerplug' ),
 			'manage_options',
 			'powerplug-setup',
 			[ $this, 'render' ]

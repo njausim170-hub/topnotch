@@ -5,28 +5,48 @@ Template: powerplug
 Author: TopNotch Mall
 Author URI: https://topnotchmall.co.ke/
 Description: Child theme for the TopNotch Mall theme. Put ALL customizations here so parent-theme updates never overwrite your work.
-Version: 1.1.0
+Version: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powerplug-child
 */
 
-/* ---- TopNotch Mall brand overrides ---- */
+/* ---- TopNotch Mall brand palette (overrides the parent design tokens) ---- */
 :root{
-  --pp-brand:#0B5FCE;      /* TopNotch Mall primary blue */
-  --pp-brand-dark:#093B82; /* deep navy */
+  --pp-brand:#0B5FCE;       /* primary blue */
+  --pp-brand-600:#0947A6;   /* darker blue for hovers */
+  --pp-brand-050:#E7EEFC;   /* light blue tint */
+  --pp-brand-dark:#093B82;  /* deep navy */
+  --pp-on-brand:#ffffff;
   --pp-ink:#111418;
 }
 
-/* Floating WhatsApp button: on-brand green with a legible white label. */
-.pp-whatsapp{background:#1EAE54;color:#fff;}
-.pp-whatsapp:hover{background:#178a43;}
+/* Header: larger, clean logo (drop the inherited white chip/padding) */
+.pp-headbar__brand .custom-logo{max-height:60px;width:auto;background:transparent;padding:0}
 
-/* Primary buttons: white label on blue for contrast. */
-.button,.pp-heroslider__cta,.pp-sticky-atc__btn{color:#fff;}
+/* Top promo bar in brand navy */
+.pp-topbar{background:#093B82}
 
-/* "Order on WhatsApp" product button. */
-.tnm-order-whatsapp{display:inline-block;margin-top:10px;background:#1EAE54;color:#fff;}
-.tnm-order-whatsapp:hover{background:#178a43;color:#fff;}
+/* Trust strip: brand navy instead of the theme's dark green */
+.pp-trust-strip{background:#093B82}
+.pp-trust-strip__tick{background:#0B5FCE}
+
+/* Mobile category drawer: blue instead of green */
+.pp-primary .pp-primary__head{background:#0B5FCE !important}
+.pp-primary .pp-drawer-extra__links a{border-color:#0B5FCE !important;color:#0B5FCE !important}
+
+/* Review citation in brand blue */
+.pp-review-card__cite{color:#0B5FCE}
+
+/* Primary buttons: white label on blue for contrast */
+.button,.pp-heroslider__cta,.pp-sticky-atc__btn{color:#fff}
+
+/* Floating WhatsApp button: keep it WhatsApp green */
+.pp-whatsapp{background:#1EAE54}
+.pp-whatsapp:hover{background:#178a43}
+
+/* "Order on WhatsApp" product button */
+.tnm-order-whatsapp{display:inline-block;margin-top:10px;background:#1EAE54;color:#fff}
+.tnm-order-whatsapp:hover{background:#178a43;color:#fff}
 
 /* Add your custom CSS below. */

@@ -18,7 +18,7 @@ if ( version_compare( PHP_VERSION, '8.0', '<' ) ) {
 		'admin_notices',
 		static function (): void {
 			echo '<div class="notice notice-error"><p>' .
-				esc_html( sprintf( __( 'PowerPlug requires PHP 8.0 or higher. This server runs PHP %s. In cPanel, open Select PHP Version (or MultiPHP Manager) and switch this site to PHP 8.1 or 8.2, then reload.', 'powerplug' ), PHP_VERSION ) ) .
+				esc_html( sprintf( __( 'TopNotch Mall requires PHP 8.0 or higher. This server runs PHP %s. In cPanel, open Select PHP Version (or MultiPHP Manager) and switch this site to PHP 8.1 or 8.2, then reload.', 'powerplug' ), PHP_VERSION ) ) .
 				'</p></div>';
 		}
 	);
@@ -62,7 +62,7 @@ add_action(
 add_action(
 	'customize_register',
 	static function ( $wp_customize ): void {
-		$wp_customize->add_section( 'pp_slider', array( 'title' => __( 'PowerPlug Slider', 'powerplug' ), 'priority' => 30 ) );
+		$wp_customize->add_section( 'pp_slider', array( 'title' => __( 'TopNotch Mall Slider', 'powerplug' ), 'priority' => 30 ) );
 		$uri = get_template_directory_uri();
 		$defaults = array( 'pp_slide_1' => $uri . '/assets/img/slide-1.jpg', 'pp_slide_2' => $uri . '/assets/img/slide-2.jpg', 'pp_slide_3' => $uri . '/assets/img/slide-3.jpg', 'pp_slide_4' => '', 'pp_slide_5' => '', 'pp_slide_6' => '' );
 		$i = 1;
@@ -249,7 +249,7 @@ add_action(
 		}
 		$importer = admin_url( 'edit.php?post_type=product&page=product_importer' );
 		$dismiss  = esc_url( add_query_arg( 'powerplug_dismiss_products', '1' ) );
-		echo '<div class="notice notice-info"><p><strong>PowerPlug:</strong> ';
+		echo '<div class="notice notice-info"><p><strong>TopNotch Mall:</strong> ';
 		echo esc_html__( 'Import your product catalogue with the WooCommerce product importer (Products > Import) using your own CSV, then choose Update existing products to refresh prices and stock.', 'powerplug' );
 		echo ' <a class="button button-primary" href="' . esc_url( $importer ) . '">' . esc_html__( 'Open product importer', 'powerplug' ) . '</a> ';
 		echo '<a href="' . $dismiss . '">' . esc_html__( 'Dismiss', 'powerplug' ) . '</a></p></div>';
