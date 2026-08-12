@@ -1,10 +1,10 @@
 /*
-Theme Name: PowerPlug Pro
-Theme URI: https://powertoolsplug.co.ke/
-Author: Power Tools Plug Kenya
-Author URI: https://powertoolsplug.co.ke/
-Description: PowerPlug Pro is a premium, conversion-focused WooCommerce theme engineered for industrial and power-tool retailers. Core Web Vitals optimized, WCAG 2.1 AA accessible, Google Merchant Center compliant, with a built-in setup wizard, header/footer/mega-menu builders and a global design system. PHP 8.0+, WordPress + WooCommerce latest.
-Version: 2.14.2
+Theme Name: TopNotch Mall
+Theme URI: https://topnotchmall.co.ke/
+Author: TopNotch Mall
+Author URI: https://topnotchmall.co.ke/
+Description: Premium, conversion-focused WooCommerce theme for TopNotch Mall — Kenya's store for genuine solar & power systems, generators, power tools, water pumps, agriculture equipment and home appliances. Core Web Vitals optimized, WCAG 2.1 AA accessible, Google Merchant Center compliant, with a built-in setup wizard, header/footer/mega-menu builders and a global design system. PHP 8.0+, WordPress + WooCommerce latest.
+Version: 2.15.0
 Requires at least: 6.4
 Tested up to: 6.7
 Requires PHP: 8.0
@@ -16,7 +16,7 @@ Text Domain: powerplug
 Tags: e-commerce, woo-commerce, block-styles, full-site-editing, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, translation-ready, accessibility-ready
 */
 
-/* PowerPlug ships its compiled design-system CSS from assets/css/main.css.
+/* TopNotch Mall ships its compiled design-system CSS from assets/css/main.css.
    This file exists to satisfy the WordPress theme header and hold minimal
    critical fallbacks. Do not add customizations here — use the child theme. */
 :root{color-scheme:light dark}

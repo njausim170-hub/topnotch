@@ -79,7 +79,7 @@ add_action(
  * PowerPlug starter content installer. Runs once on theme activation.
  */
 function powerplug_run_starter_setup(): void {
-	if ( get_option( 'powerplug_starter_v6' ) === 'done' ) {
+	if ( get_option( 'powerplug_starter_topnotch_v1' ) === 'done' ) {
 		return;
 	}
 	$dir = get_template_directory();
@@ -185,7 +185,7 @@ function powerplug_run_starter_setup(): void {
 		update_option( 'woocommerce_store_city', 'Nairobi' );
 		update_option( 'woocommerce_default_country', 'KE' );
 		update_option( 'woocommerce_store_postcode', '00100' );
-		update_option( 'woocommerce_email_from_address', 'info@powertoolsplug.co.ke' );
+		update_option( 'woocommerce_email_from_address', 'info@topnotchmall.co.ke' );
 		update_option( 'woocommerce_enable_ajax_add_to_cart', 'yes' );
 		update_option( 'woocommerce_cart_redirect_after_add', 'no' );
 		if ( function_exists( 'wc_create_pages' ) ) {
@@ -222,7 +222,7 @@ function powerplug_run_starter_setup(): void {
 		}
 	}
 
-	update_option( 'powerplug_starter_v6', 'done' );
+	update_option( 'powerplug_starter_topnotch_v1', 'done' );
 }
 add_action( 'after_switch_theme', 'powerplug_run_starter_setup' );
 add_action( 'admin_init', 'powerplug_run_starter_setup' );
@@ -250,7 +250,7 @@ add_action(
 		$importer = admin_url( 'edit.php?post_type=product&page=product_importer' );
 		$dismiss  = esc_url( add_query_arg( 'powerplug_dismiss_products', '1' ) );
 		echo '<div class="notice notice-info"><p><strong>PowerPlug:</strong> ';
-		echo esc_html__( 'Your cleaned catalogue (555 products) ships with the theme at wp-content/themes/powerplug/starter/products.csv. Import it with the WooCommerce product importer and choose Update existing products.', 'powerplug' );
+		echo esc_html__( 'Import your product catalogue with the WooCommerce product importer (Products > Import) using your own CSV, then choose Update existing products to refresh prices and stock.', 'powerplug' );
 		echo ' <a class="button button-primary" href="' . esc_url( $importer ) . '">' . esc_html__( 'Open product importer', 'powerplug' ) . '</a> ';
 		echo '<a href="' . $dismiss . '">' . esc_html__( 'Dismiss', 'powerplug' ) . '</a></p></div>';
 	}
@@ -296,8 +296,8 @@ add_action(
 		}
 		$data = array(
 			'@context'           => 'https://schema.org',
-			'@type'              => 'HardwareStore',
-			'name'               => 'Power Tools Plug',
+			'@type'              => 'Store',
+			'name'               => 'TopNotch Mall',
 			'image'              => get_template_directory_uri() . '/assets/img/brand-logo.png',
 			'url'                => home_url( '/' ),
 			'telephone'          => '+254708777192',
@@ -343,7 +343,7 @@ add_action(
 add_action(
 	'wp_head',
 	static function (): void {
-		$brand = sanitize_hex_color( (string) get_theme_mod( 'pp_brand_color', '#268655' ) );
+		$brand = sanitize_hex_color( (string) get_theme_mod( 'pp_brand_color', '#0B5FCE' ) );
 		$ink   = sanitize_hex_color( (string) get_theme_mod( 'pp_ink_color', '#111418' ) );
 		$css   = '';
 		if ( $brand ) {

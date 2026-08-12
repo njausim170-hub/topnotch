@@ -278,7 +278,7 @@ final class Home {
 			[ 'M-Pesa & pay on delivery', 'Pay the way that suits you — securely.' ],
 			[ 'Expert support', 'Our team knows these tools inside out and helps you choose right.' ],
 		];
-		echo '<section class="pp-section pp-section--muted"><div class="pp-container"><h2 class="pp-section__title">' . esc_html__( 'Why choose Power Tools Plug', 'powerplug' ) . '</h2><div class="pp-grid pp-grid--why">';
+		echo '<section class="pp-section pp-section--muted"><div class="pp-container"><h2 class="pp-section__title">' . esc_html__( 'Why choose TopNotch Mall', 'powerplug' ) . '</h2><div class="pp-grid pp-grid--why">';
 		foreach ( $points as [ $title, $body ] ) {
 			printf( '<div class="pp-why-card"><h3>%s</h3><p>%s</p></div>', esc_html( $title ), esc_html( $body ) );
 		}
@@ -308,7 +308,7 @@ final class Home {
 	public static function newsletter(): void {
 		echo '<section class="pp-section pp-newsletter"><div class="pp-container pp-container--narrow">';
 		echo '<h2 class="pp-section__title">' . esc_html__( 'Get deals & new arrivals', 'powerplug' ) . '</h2>';
-		echo '<p>' . esc_html__( 'Join our list for offers on Makita, Bosch, Ingco and Total tools.', 'powerplug' ) . '</p>';
+		echo '<p>' . esc_html__( 'Join our list for offers on solar, generators, power tools and appliances.', 'powerplug' ) . '</p>';
 		$html = do_shortcode( '[contact-form-7 id="newsletter" title="Newsletter"]' );
 		$has_form = ( strpos( (string) $html, 'wpcf7' ) === false ) ? false : true;
 		$has_error = ( strpos( (string) $html, 'not found' ) === false ) ? false : true;
@@ -317,7 +317,7 @@ final class Home {
 		} else {
 			echo '<div class="pp-newsletter__fallback">';
 			echo '<a class="button" href="https://wa.me/254708777192" rel="noopener">' . esc_html__( 'Message us on WhatsApp', 'powerplug' ) . '</a> ';
-			echo '<a class="button button-ghost" href="mailto:info@powertoolsplug.co.ke?subject=Subscribe">' . esc_html__( 'Email to subscribe', 'powerplug' ) . '</a>';
+			echo '<a class="button button-ghost" href="mailto:info@topnotchmall.co.ke?subject=Subscribe">' . esc_html__( 'Email to subscribe', 'powerplug' ) . '</a>';
 			echo '</div>';
 		}
 		echo '</div></section>';
@@ -330,7 +330,7 @@ final class Home {
 			__( 'Secure payment: M-Pesa or Pay on delivery', 'powerplug' ),
 			__( 'Nationwide delivery in 1–3 days', 'powerplug' ),
 		);
-		echo '<section class="pp-trust-strip" aria-label="' . esc_attr__( 'Why shop with Power Tools Plug', 'powerplug' ) . '"><div class="pp-container pp-trust-strip__grid">';
+		echo '<section class="pp-trust-strip" aria-label="' . esc_attr__( 'Why shop with TopNotch Mall', 'powerplug' ) . '"><div class="pp-container pp-trust-strip__grid">';
 		foreach ( $items as $it ) {
 			echo '<div class="pp-trust-strip__item"><span class="pp-trust-strip__tick" aria-hidden="true">✓</span><span>' . esc_html( $it ) . '</span></div>';
 		}

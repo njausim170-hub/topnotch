@@ -53,7 +53,7 @@ final class Schema implements Bootable {
 			'url'         => home_url( '/' ),
 			'logo'        => $this->logo_url(),
 			'telephone'   => get_option( 'powerplug_phone', '+254708777192' ),
-			'email'       => get_option( 'powerplug_email', 'info@powertoolsplug.co.ke' ),
+			'email'       => get_option( 'powerplug_email', 'info@topnotchmall.co.ke' ),
 			'address'     => [
 				'@type'           => 'PostalAddress',
 				'streetAddress'   => get_option( 'powerplug_street', 'Magomano House, 1st Floor, Room 10D, Tom Mboya Street' ),

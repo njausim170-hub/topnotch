@@ -23,10 +23,10 @@ final class Customizer implements Bootable {
 		return [
 			'pp_phone'         => '+254 708 777192',
 			'pp_whatsapp'      => '254708777192',
-			'pp_email'         => 'info@powertoolsplug.co.ke',
+			'pp_email'         => 'info@topnotchmall.co.ke',
 			'pp_hours'         => 'Mon - Sat, 9AM - 5PM',
 			'pp_address'       => 'Magomano House, 1st Floor, Room 10D, Tom Mboya Street, Nairobi',
-			'pp_topbar_notice' => 'Genuine, warranty-backed power tools & equipment  |  Pay by M-Pesa or on delivery',
+			'pp_topbar_notice' => 'Genuine solar, generators, power tools & equipment  |  Pay by M-Pesa or on delivery',
 		];
 	}
 
@@ -73,7 +73,7 @@ final class Customizer implements Bootable {
 
 	private function register_branding( \WP_Customize_Manager $wp ): void {
 		$wp->add_section( 'pp_branding', array( 'title' => __( 'Branding & Colors', 'powerplug' ), 'panel' => 'powerplug' ) );
-		$wp->add_setting( 'pp_brand_color', array( 'default' => '#268655', 'sanitize_callback' => 'sanitize_hex_color', 'transport' => 'refresh' ) );
+		$wp->add_setting( 'pp_brand_color', array( 'default' => '#0B5FCE', 'sanitize_callback' => 'sanitize_hex_color', 'transport' => 'refresh' ) );
 		$wp->add_control( new \WP_Customize_Color_Control( $wp, 'pp_brand_color', array( 'label' => __( 'Primary brand color', 'powerplug' ), 'section' => 'pp_branding' ) ) );
 		$wp->add_setting( 'pp_ink_color', array( 'default' => '#111418', 'sanitize_callback' => 'sanitize_hex_color', 'transport' => 'refresh' ) );
 		$wp->add_control( new \WP_Customize_Color_Control( $wp, 'pp_ink_color', array( 'label' => __( 'Headings & text color', 'powerplug' ), 'section' => 'pp_branding' ) ) );

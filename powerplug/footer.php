@@ -16,7 +16,7 @@ $pp_tel      = preg_replace( '/[^0-9+]/', '', $pp_phone );
 	<div class="pp-footer__cols">
 		<div class="pp-footer__col pp-footer__about">
 			<?php the_custom_logo(); ?>
-			<p><?php esc_html_e( 'Your trusted power-tools shop in Nairobi. Genuine Makita, Bosch, DeWalt, Ingco, Total and more, for professionals and home projects. Pay by M-Pesa or on delivery.', 'powerplug' ); ?></p>
+			<p><?php esc_html_e( 'TopNotch Mall is your trusted Nairobi store for genuine solar & power systems, generators, power tools, water pumps and home appliances — with fast countrywide delivery. Pay by M-Pesa, bank transfer or on delivery.', 'powerplug' ); ?></p>
 			<p class="pp-footer__social">
 				<?php if ( strlen( $pp_whatsapp ) > 0 ) : ?><a href="https://wa.me/<?php echo esc_attr( $pp_whatsapp ); ?>" rel="noopener">WhatsApp</a> &middot;<?php endif; ?>
 				<a href="https://www.facebook.com/" rel="noopener">Facebook</a> &middot;
@@ -27,10 +27,10 @@ $pp_tel      = preg_replace( '/[^0-9+]/', '', $pp_phone );
 		<div class="pp-footer__col">
 			<h3 class="pp-footer__title"><?php esc_html_e( 'Shop', 'powerplug' ); ?></h3>
 			<ul>
-				<li><a href="<?php echo esc_url( home_url( '/product-category/grinders/' ) ); ?>"><?php esc_html_e( 'Grinders', 'powerplug' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/product-category/solar-power/' ) ); ?>"><?php esc_html_e( 'Solar & Power', 'powerplug' ); ?></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/product-category/generators/' ) ); ?>"><?php esc_html_e( 'Generators', 'powerplug' ); ?></a></li>
 				<li><a href="<?php echo esc_url( home_url( '/product-category/water-pumps/' ) ); ?>"><?php esc_html_e( 'Water Pumps', 'powerplug' ); ?></a></li>
-				<li><a href="<?php echo esc_url( home_url( '/product-category/cctv-security/' ) ); ?>"><?php esc_html_e( 'CCTV and Security', 'powerplug' ); ?></a></li>
+				<li><a href="<?php echo esc_url( home_url( '/product-category/power-tools/' ) ); ?>"><?php esc_html_e( 'Power Tools', 'powerplug' ); ?></a></li>
 				<li><a href="<?php echo esc_url( function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/shop/' ) ); ?>"><?php esc_html_e( 'All Categories', 'powerplug' ); ?></a></li>
 			</ul>
 		</div>

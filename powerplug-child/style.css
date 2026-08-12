@@ -1,14 +1,32 @@
 /*
-Theme Name: PowerPlug Pro Child
-Theme URI: https://powertoolsplug.co.ke/
+Theme Name: TopNotch Mall Child
+Theme URI: https://topnotchmall.co.ke/
 Template: powerplug
-Author: Power Tools Plug Kenya
-Author URI: https://powertoolsplug.co.ke/
-Description: Starter child theme for PowerPlug Pro. Put ALL customizations here so parent-theme updates never overwrite your work.
-Version: 1.0.0
+Author: TopNotch Mall
+Author URI: https://topnotchmall.co.ke/
+Description: Child theme for the TopNotch Mall theme. Put ALL customizations here so parent-theme updates never overwrite your work.
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: powerplug-child
 */
+
+/* ---- TopNotch Mall brand overrides ---- */
+:root{
+  --pp-brand:#0B5FCE;      /* TopNotch Mall primary blue */
+  --pp-brand-dark:#093B82; /* deep navy */
+  --pp-ink:#111418;
+}
+
+/* Floating WhatsApp button: on-brand green with a legible white label. */
+.pp-whatsapp{background:#1EAE54;color:#fff;}
+.pp-whatsapp:hover{background:#178a43;}
+
+/* Primary buttons: white label on blue for contrast. */
+.button,.pp-heroslider__cta,.pp-sticky-atc__btn{color:#fff;}
+
+/* "Order on WhatsApp" product button. */
+.tnm-order-whatsapp{display:inline-block;margin-top:10px;background:#1EAE54;color:#fff;}
+.tnm-order-whatsapp:hover{background:#178a43;color:#fff;}
 
 /* Add your custom CSS below. */

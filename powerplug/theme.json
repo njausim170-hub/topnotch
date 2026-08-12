@@ -15,8 +15,8 @@
       "palette": [
         {
           "slug": "brand",
-          "color": "#F5A302",
-          "name": "Brand Amber"
+          "color": "#0B5FCE",
+          "name": "Brand Blue"
         },
         {
           "slug": "brand-ink",
@@ -153,7 +153,7 @@
       "button": {
         "color": {
           "background": "var(--wp--preset--color--brand)",
-          "text": "var(--wp--preset--color--brand-ink)"
+          "text": "var(--wp--preset--color--surface)"
         },
         "border": {
           "radius": "10px"
